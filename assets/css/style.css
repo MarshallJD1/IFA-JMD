@@ -21,11 +21,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
-    display: flex;
-    justify-content: flex-start;
-    align-self: auto;
 }
-
 
 .logo {
     width: 40px;
@@ -47,7 +43,7 @@ body {
 
 .navbar {
     background-color: var(--primary-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Roboto Slab', sans-serif, 'Open Sans', 'Hyperlegible', 'Lato';
     font-size: 1.2rem;
     font-weight: 400;
@@ -63,7 +59,7 @@ body {
 .navbar-brand {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--secondary-text);
 }
 
 .navbar a {
@@ -72,13 +68,13 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-text);
 }
 
 .navbar-nav .nav-link {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--secondary-text);
     margin-right: 15px;
 }
 
