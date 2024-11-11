@@ -19,6 +19,7 @@ Additional materials used :
 - Boostrap 5.3 - https://getbootstrap.com/
 - Google Fonts ( Roboto Slab, Atkinson Hypereligable, open sans, latto) - https://fonts.google.com/
 - Fontawesome Icon free kit - https://fontawesome.com/
+- Tinyimg Image conversion - https://tiny-img.com/webp/
 
 Resources used:
 
