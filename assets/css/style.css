@@ -10,7 +10,7 @@
     --secondary-heading: #C9EB34;
     --highlight-color: #191CEA;
     --primary-text: #333;
-    --secondary-text: #FFF;
+    --secondary-text: #EBD3B0;
 }
 
 body {
@@ -23,6 +23,16 @@ body {
     background-color: var(--secondary-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    color: var(--primary-heading);
+}
+
+.nav{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 .logo {
     width: 40px;
     height: 40px;
@@ -60,6 +70,7 @@ body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
     color: var(--secondary-text);
+    
 }
 
 .navbar a {
