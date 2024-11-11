@@ -11,45 +11,100 @@
     --highlight-color: #191CEA;
     --primary-text: #333;
     --secondary-text: #FFF;
-
-    
-
 }
 
-.logo-container {
-    position: absolute;
+body {
+    font-family: 'Open Sans', sans-serif, 'Roboto Slab', 'Hyperlegible', 'Lato';
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--primary-text);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.help-button {
+    position: fixed;
     top: 10px;
-    left: 10px;
-    z-index: 1050; /* Ensure it stays above other elements */
-  
-    
-    
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    /* Ensure it stays above other elements */
+    border-radius: 70%;
+    color: var(--secondary-color);
 }
 
 .navbar {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: 'Roboto Slab', sans-serif, 'Open Sans', 'Hyperlegible', 'Lato';
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
     text-align: center;
-    border-radius: 25%;
+    padding: 0 1rem; /* Adjust padding to ensure proper spacing */
+    width: 100%; /* Ensure the navbar takes the full width */
+    top: 0; /* Fix the navbar to the top */
+    z-index: 1040; /* Ensure it stays below the logo and help button */
+}
+
+.navbar-brand {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
 }
 
 .navbar a {
     color: var(--secondary-color);
     text-decoration: solid;
-    
 }
 
 .navbar a:hover {
-    color: var(--secondary-text);
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--highlight-color);
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: var(--secondary-text);
+    color: var(--highlight-color);
     font-weight: bold;
 }
 
+.navbar-toggler {
+    border: none;
+    margin-left: auto; /* Ensure the toggler is on the right */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Media Query for small screens */
+@media (max-width: 550px) and (max-height: 863px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px;
+    }
+}
