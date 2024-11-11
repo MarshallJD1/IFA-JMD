@@ -20,6 +20,7 @@ Additional materials used :
 - Google Fonts ( Roboto Slab, Atkinson Hypereligable, open sans, latto) - https://fonts.google.com/
 - Fontawesome Icon free kit - https://fontawesome.com/
 - Tinyimg Image conversion - https://tiny-img.com/webp/
+- Another image comvertor - https://cloudconvert.com/
 
 Resources used:
 
