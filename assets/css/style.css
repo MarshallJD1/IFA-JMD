@@ -22,6 +22,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
+    opacity: 80%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,6 +79,7 @@ footer {
     width: 100%; /* Ensure the navbar takes the full width */
     top: 0; /* Fix the navbar to the top */
     z-index: 1040; /* Ensure it stays below the logo and help button */
+    opacity: 85%;
 }
 
 .navbar-brand {
@@ -122,6 +124,10 @@ footer {
 }
 /*Hero Image*/
 
+.home {
+    padding-bottom: 0 !important;
+}
+
 .hero-image {
     background-image: url('../images/hero.webp');
     background-size: cover;
@@ -132,7 +138,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity: 90%;
+    opacity: 80%;
 }
 
 .home-title {
@@ -140,14 +146,17 @@ footer {
     font-size: 3rem;
     color: var(--white);
     margin-bottom: 1rem;
+   
 }
 .home-text {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--secondary-color);
     margin-bottom: 1rem;
-    /* background-color: var(--primary-color); */
+    margin-top: 1rem;
     border-radius: 5%;
+    background-color: var(--primary-color);
+   
     
 }
 
@@ -155,7 +164,8 @@ footer {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 2rem;
     color: var(--white);
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    background-color: var(--primary-text);
 }
 
 /*Awareness section*/
