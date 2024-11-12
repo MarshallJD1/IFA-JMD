@@ -151,6 +151,13 @@ footer {
     
 }
 
+.quote {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
 /*Awareness section*/
 
 .awareness {
