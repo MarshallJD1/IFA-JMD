@@ -184,32 +184,63 @@
                     <p class="get-help-text">Here we have collated a few tips on coping and resources for you if you are 
                         currently going through distress.
                     </p>
-                    <!--Card Deck-->
-                    <div class="card-deck">
-                        <div class="card">
-                            <img src="./assets/images/resource1.webp" class="card-img-top" alt="Breathing">
-                            <div class="card-body">
-                                <h5 class="card-title">Panic Attacks</h5>
-                                <p class='panicattacks'>Most panic attacks last between 5 and 15 minutes
-                                    <br>
-                                    Lets try some breathing exercises to help you through this.
-                                    <ul>
-                                        <li>Take a deep breath in through your nose, counting to 4.</li>
-                                        <li>Hold your breath for 4 seconds (less if you need).</li>
-                                        <li>Exhale slowly through your mouth, counting to 4.</li>
-                                        <li>Repeat this process.</li>
-                                        <li>Try to focus on your senses: Chew sweets, touch something soft</li>
-                                        <li>Remember, you are not alone.</li>
-                                    </ul>
-                                    Press this button to go to a page about panic attacks. 
-
-                                </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                    <!-- Carousel -->
+                    <div id="getHelpCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="./assets/images/resource1.webp" class="card-img-top" alt="Breathing">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Panic Attacks</h5>
+                                        <p class='panicattacks'>Most panic attacks last between 5 and 15 minutes
+                                            <br>
+                                            Lets try some breathing exercises to help you through this.
+                                            <ul>
+                                                <li>Take a deep breath in through your nose, counting to 4.</li>
+                                                <li>Hold your breath for 4 seconds (less if you need).</li>
+                                                <li>Exhale slowly through your mouth, counting to 4.</li>
+                                                <li>Repeat this process.</li>
+                                                <li>Try to focus on your senses: Chew sweets, touch something soft</li>
+                                                <li>Remember, you are not alone.</li>
+                                            </ul>
+                                            Press this button to go to a page about panic attacks. 
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat carousel-item for more resources -->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/images/resource2.webp" class="card-img-top" alt="Resource 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Resource 2</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/images/resource3.webp" class="card-img-top" alt="Resource 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Resource 3</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#getHelpCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#getHelpCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!-- Repeat card-deck for more resources -->
-                    
+                    <!-- End of Carousel -->
                 </div>
             </div>
         </div>
