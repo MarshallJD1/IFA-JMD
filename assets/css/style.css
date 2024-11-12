@@ -201,6 +201,41 @@ footer {
     color: var(--primary-text); /* Change this to your desired text color */
 }
 
+/*Get Help*/
+
+.get-help {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+.get-help-title {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.card {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+.card-body {
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
+}
+
+.card-body p{
+    color: var(--primary-text);
+}
 
 /* Media Query for small screens */
 @media (max-width: 550px) and (max-height: 863px) {
