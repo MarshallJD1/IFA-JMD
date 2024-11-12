@@ -11,22 +11,23 @@
     --highlight-color: #191CEA;
     --primary-text: #333;
     --secondary-text: #EBD3B0;
+    --white: #fff;
 }
 
 body {
     font-family: 'Open Sans', sans-serif, 'Roboto Slab', 'Hyperlegible', 'Lato';
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--primary-text);
+    color: var(--white);
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
-    color: var(--primary-heading);
+    color: var(--secondary-color);
 }
 
 
@@ -42,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background-color: var(--highlight-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-text);
+    color: var(--primary-text);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
