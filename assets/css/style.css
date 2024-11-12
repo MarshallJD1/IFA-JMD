@@ -79,7 +79,7 @@ footer {
     width: 100%; /* Ensure the navbar takes the full width */
     top: 0; /* Fix the navbar to the top */
     z-index: 1040; /* Ensure it stays below the logo and help button */
-    opacity: 85%;
+    
 }
 
 .navbar-brand {
