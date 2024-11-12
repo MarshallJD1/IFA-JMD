@@ -131,8 +131,24 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    opacity: 90%;
 }
 
+.home-title {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.home-text {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    /* background-color: var(--primary-color); */
+    border-radius: 5%;
+    
+}
 
 
 /* Media Query for small screens */
