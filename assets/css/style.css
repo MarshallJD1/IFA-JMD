@@ -10,39 +10,37 @@
     --secondary-heading: #C9EB34;
     --highlight-color: #191CEA;
     --primary-text: #333;
-    --secondary-text: #EBD3B0;
-    --white: #fff;
+    --secondary-text: #FFF;
 }
 
 body {
-    font-family: 'Atkinson Hyperlegible', sans-serif, 'Roboto Slab', 'Open Sans', 'Lato';
+    font-family: 'Open Sans', sans-serif, 'Roboto Slab', 'Hyperlegible', 'Lato';
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--white);
+    color: var(--primary-text);
     margin: 0;
-    padding: 0;    
-    /* background-color: var(--primary-color); */
-    opacity: 80%;
-    
+    padding: 0;
+    background-color: var(--secondary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
-    color: var(--secondary-color);
-    
+    color: var(--primary-heading);
 }
 
 p {
     text-decoration: solid;
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
-    color: var(--secondary-text);
+    color: var(--secondary-heading);
     text-align: center;
+    /* background-color: #A98DE5; */
 }
 footer { 
     text-align: center;
     font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: #A98DE5;
 }
 
 .logo {
@@ -127,37 +125,41 @@ footer {
 
 .home {
     padding-bottom: 0 !important;
+    
 }
 
 .hero-image {
-    background-image: url('../images/hero.webp');
+    background-image: url('/assets/images/hero.webp'); /* Replace with your hero image path */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 70%;
+    background-attachment: fixed; /* Fix the background image */
+    padding: 50px 0; /* Adjust padding as needed */
+    color: var(--secondary-text);
 }
 
 .home-title {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 3rem;
-    color: var(--white);
-    margin-bottom: 20rem;
+    font-size: 4rem;
+    color: var(--secondary-heading);
+    margin-bottom: 20px;
     background-color: var(--primary-color);
+    padding-top: 10px;
+    
     
    
 }
-.home-text {
+
+.home-text  {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 1.5rem;
-    color: var(--white);
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--secondary-heading);
+    text-decoration: solid;
+    margin-bottom: 20px;
+    margin-top: 50px;
     border-radius: 5%;
+    background-color: var(--primary-color);
+    align-items: baseline;
+    padding: 20px;
     
    
     
@@ -166,7 +168,7 @@ footer {
 .quote {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 2rem;
-    color: var(--white);
+    color: var(--secondary-heading);
     margin-top: 2rem;
     background-color: var(--primary-text);
 }
@@ -178,12 +180,10 @@ footer {
     font-size: 1.5rem;
     color: var(--secondary-text);
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     padding: 1rem;
-    background-image: url('../images/background.webp');
-    background-repeat: stretch;
-    background-size: cover;
-    background-position: center;
+    background-color: #A98DE5;
+    
     
 }
 
@@ -192,6 +192,17 @@ footer {
     font-size: 4rem;
     color: var(--white);
     margin-bottom: 1rem;
+    text-align: center;
+}
+
+.awareness-text {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 5%;
+    background-color: var(--primary-color);
 }
 
 /*Accordion*/
@@ -234,6 +245,8 @@ footer {
     margin: 0 auto;
     width: 80%;
     padding: 1rem;
+    background-color: #A98DE5;
+    
 }
 
 .get-help-title {
@@ -275,6 +288,8 @@ footer {
     margin-bottom: 1rem;
     text-align: center;
 }
+
+
 /*Events*/
 
 .events {
@@ -284,6 +299,7 @@ footer {
     margin: 0 auto;
     width: 80%;
     padding: 1rem;
+    background-color: #A98DE5;
 }
 
 .events-title {
@@ -306,12 +322,12 @@ footer {
 /* Carousel Card Image */
 .card-img-top {
     width: 100%;
-    height: 400px; /* Set a fixed height */
+    height: 350px; /* Set a fixed height */
     object-fit: cover; /* Ensure the image covers the area without stretching */
 }
 
 
-.even
+
 /*Gallery*/
 
 .gallery {
@@ -321,6 +337,7 @@ footer {
     margin: 0 auto;
     width: 80%;
     padding: 1rem;
+    background-color: #A98DE5;
 }
 
 .gallery-title {
@@ -329,6 +346,7 @@ footer {
     color: var(--white);
     margin-bottom: 1rem;
     text-align: center;
+    background-color: #A98DE5;
 }
 
 .gallery-text {
@@ -361,7 +379,7 @@ footer {
 
 /* Social Icons */
 .social-icons a {
-    color: var(--white);
+    color: var(--primary-text);
     font-size: 1.5rem;
     transition: color 0.3s;
 }
@@ -379,5 +397,24 @@ footer {
     .navbar-toggler {
         position: absolute;
         right: 10px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-image {
+        padding: 50px 0; /* Adjust padding for smaller screens */
+    }
+
+    .home-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .home-text {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .card-img-top {
+        height: 150px; /* Adjust image height for smaller screens */
     }
 }
