@@ -151,7 +151,7 @@ footer {
 }
 
 .hero-image {
-    background-image: url('./assets/images/hero.webp');
+    background-image: url("/assets/images/hero.webp");
     /* Replace with your hero image path */
     background-size: cover;
     background-position: center;
@@ -161,16 +161,7 @@ footer {
     /* Adjust padding as needed */
     color: var(--secondary-text);
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    
     /* Distribute space between elements */
 }
 
