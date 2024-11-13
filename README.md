@@ -1,7 +1,5 @@
 # IFA-JMD
-Name :
-
-KeepinMind
+Name : KeepinMind
 Deployed page - https://marshalljd1.github.io/IFA-JMD/
 
 Description:
@@ -98,6 +96,19 @@ Lighthouse report:
 ![lighthouse](https://github.com/user-attachments/assets/fdb34263-ee95-4e3f-9500-d7457f0c0cc1)
 
 Tested using the validators listed above and lighthouse. 
+
+Bugs :
+
+Media queries need sorting below 550px as hamburger menu overlaps with Help button. (navbar)
+Styling errors on 1 heading and the footers , shouldn't be that color.
+a few styling bugs sizing wise ; need to resize courasel/cards
+when signup complete 'x' doesn't close tab - have to click out.
+slight overflow from somewhere on tablet and below cauing horizontal scroll
+
+
+
+
+
 
 Reflection : 
 
