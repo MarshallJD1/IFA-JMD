@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
@@ -11,6 +18,7 @@
     --highlight-color: #191CEA;
     --primary-text: #333;
     --secondary-text: #FFF;
+    --white: #FFF;
 }
 
 body {
@@ -23,21 +31,28 @@ body {
     background-color: var(--secondary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 700;
     color: var(--primary-heading);
 }
 
 p {
+
     text-decoration: solid;
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: 400;
     color: var(--secondary-heading);
     text-align: center;
-    /* background-color: #A98DE5; */
+
 }
-footer { 
+
+footer {
     text-align: center;
     font-family: 'Atkinson Hyperlegible', sans-serif;
     background-color: #A98DE5;
@@ -49,9 +64,10 @@ footer {
     border-radius: 50%;
     margin-right: 10px;
 }
+
 /*Nav Bar */
 .navbar {
-    background-color: var(--primary-color)!important;
+    background-color: var(--primary-color) !important;
 }
 
 .btn-primary {
@@ -74,18 +90,22 @@ footer {
     line-height: 1.6;
     margin: 0;
     text-align: center;
-    padding: 0 1rem; /* Adjust padding to ensure proper spacing */
-    width: 100%; /* Ensure the navbar takes the full width */
-    top: 0; /* Fix the navbar to the top */
-    z-index: 1040; /* Ensure it stays below the logo and help button */
-    
+    padding: 0 1rem;
+    /* Adjust padding to ensure proper spacing */
+    width: 100%;
+    /* Ensure the navbar takes the full width */
+    top: 0;
+    /* Fix the navbar to the top */
+    z-index: 1040;
+    /* Ensure it stays below the logo and help button */
+
 }
 
 .navbar-brand {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
     color: var(--secondary-text);
-    
+
 }
 
 .navbar a {
@@ -115,62 +135,82 @@ footer {
 
 .navbar-toggler {
     border: none;
-    margin-left: auto; /* Ensure the toggler is on the right */
+    margin-left: auto;
+    /* Ensure the toggler is on the right */
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 /*Hero Image*/
 
 .home {
     padding-bottom: 0 !important;
-    
+
 }
 
 .hero-image {
-    background-image: url('/assets/images/hero.webp'); /* Replace with your hero image path */
+    background-image: url('/assets/images/hero.webp');
+    /* Replace with your hero image path */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Fix the background image */
-    padding: 50px 0; /* Adjust padding as needed */
+    background-attachment: fixed;
+    /* Fix the background image */
+    padding: 50px 0;
+    /* Adjust padding as needed */
     color: var(--secondary-text);
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    justify-content: space-between; /* Distribute space between elements */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /* Distribute space between elements */
 }
 
 .home-title {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 4rem;
     color: var(--primary-color);
-    
+
     margin: 5px;
-    
-    padding-top: 20px; /* Add padding to move the title higher up */
+
+    padding-top: 20px;
+    /* Add padding to move the title higher up */
 }
 
-.home-text  {
+.home-text {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1rem;
     color: var(--secondary-heading);
+    -webkit-text-decoration: solid;
     text-decoration: solid;
     margin-bottom: 20px;
-    margin-top: 10px; /* Add margin to move the text lower down */
+    margin-top: 10px;
+    /* Add margin to move the text lower down */
     border-radius: 5%;
     background-color: var(--primary-color);
-    padding: 20px; /* Add padding for better spacing */
-    }
+    padding: 20px;
+    /* Add padding for better spacing */
+}
 
 .quote {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
     color: var(--secondary-heading);
-    
+
     background-color: var(--primary-text);
-    align-self: flex-end; /* Align the quote to the bottom */
-    margin: 5px; /* Add margin to create space at the bottom */
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    /* Align the quote to the bottom */
+    margin: 5px;
+    /* Add margin to create space at the bottom */
 }
 
 /*Awareness section*/
@@ -183,8 +223,8 @@ footer {
     width: 80%;
     padding: 1rem;
     background-color: #A98DE5;
-    
-    
+
+
 }
 
 .awareness-title {
@@ -206,7 +246,7 @@ footer {
 }
 
 /*Accordion*/
-.accordion{
+.accordion {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
     color: var(--secondary-text);
@@ -214,26 +254,33 @@ footer {
     width: 80%;
     padding: 1rem;
 }
+
 .accordion-button {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     color: var(--primary-color);
-    
+
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--secondary-color); /* Change this to your desired color */
-    color: var (--primary-color); /* Change this to your desired text color */
+    background-color: var(--secondary-color);
+    /* Change this to your desired color */
+    color: var(--primary-color);
+    /* Change this to your desired text color */
 }
 
 .accordion-button:not(.collapsed)::after {
-    filter: invert(1); /* Invert the color of the arrow icon */
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    /* Invert the color of the arrow icon */
 }
 
 .accordion-body {
-    background-color: var(--secondary-color); /* Change this to your desired background color */
-    color: var(--primary-text); /* Change this to your desired text color */
+    background-color: var(--secondary-color);
+    /* Change this to your desired background color */
+    color: var(--primary-text);
+    /* Change this to your desired text color */
 }
 
 /*Get Help*/
@@ -246,7 +293,7 @@ footer {
     width: 80%;
     padding: 1rem;
     background-color: #A98DE5;
-    
+
 }
 
 .get-help-title {
@@ -263,7 +310,7 @@ footer {
     margin: 0 auto;
     width: 80%;
     padding: 1rem;
-    
+
 }
 
 .card-body {
@@ -271,13 +318,15 @@ footer {
     color: var(--primary-text);
 }
 
-.card-body p{
+.card-body p {
     color: var(--primary-text);
 }
 
 .card-body a {
     color: var(--primary-text);
     background-color: var(--primary-color);
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 
@@ -322,8 +371,11 @@ footer {
 /* Carousel Card Image */
 .card-img-top {
     width: 100%;
-    height: 350px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the area without stretching */
+    height: 350px;
+    /* Set a fixed height */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* Ensure the image covers the area without stretching */
 }
 
 
@@ -343,7 +395,7 @@ footer {
 .gallery-title {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 4rem;
-    color: var (--white);
+    color: var(--secondary-text);
     margin-bottom: 1rem;
     text-align: center;
     background-color: #A98DE5;
@@ -381,6 +433,8 @@ footer {
 .social-icons a {
     color: var(--primary-text);
     font-size: 1.5rem;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -402,51 +456,68 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar-brand, .help-button, .navbar-toggler {
+
+    .navbar-brand,
+    .help-button,
+    .navbar-toggler {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         text-align: center;
     }
 
     .hero-image {
-        padding: 50px 0; /* Adjust padding for smaller screens */
+        padding: 50px 0;
+        /* Adjust padding for smaller screens */
     }
 
     .home-title {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
     }
 
     .home-text {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
     }
 
     .card-img-top {
-        height: 150px; /* Adjust image height for smaller screens */
+        height: 150px;
+        /* Adjust image height for smaller screens */
     }
+
     .card {
-        width: 100%; /* Make carousel items full width on smaller screens */
+        width: 100%;
+        /* Make carousel items full width on smaller screens */
     }
+
     .invisiblebox {
         max-height: 50px;
     }
-    
+
 }
 
 @media (max-width: 550px) {
     .home-title {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
     }
 
     .home-text {
-        font-size: 0.75rem; /* Adjust font size for smaller screens */
+        font-size: 0.75rem;
+        /* Adjust font size for smaller screens */
     }
 
     .card-img-top {
-        height: 100px; /* Adjust image height for smaller screens */
+        height: 100px;
+        /* Adjust image height for smaller screens */
     }
 
     .card {
-        width: 100%; /* Make carousel items full width on smaller screens */
+        width: 100%;
+        /* Make carousel items full width on smaller screens */
     }
+
     .invisiblebox {
         max-height: 50px;
     }
