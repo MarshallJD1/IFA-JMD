@@ -95,6 +95,12 @@ Lighthouse report:
 
 ![lighthouse](https://github.com/user-attachments/assets/fdb34263-ee95-4e3f-9500-d7457f0c0cc1)
 
+![html check](https://github.com/user-attachments/assets/745dafcf-68f1-4f49-84f3-449d8675b3f6)
+
+![css validator](https://github.com/user-attachments/assets/335ffbfe-11f3-46ba-a437-be1da273c8e1)
+
+
+
 Tested using the validators listed above and lighthouse. 
 
 Bugs :
