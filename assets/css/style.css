@@ -20,9 +20,8 @@ body {
     line-height: 1.6;
     color: var(--white);
     margin: 0;
-    padding: 0;
-        
-    background-color: var(--primary-color);
+    padding: 0;    
+    /* background-color: var(--primary-color); */
     opacity: 80%;
     
 }
@@ -155,11 +154,11 @@ footer {
 .home-text {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--white);
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 5%;
-    background-color: var(--primary-color);
+    
    
     
 }
