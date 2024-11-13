@@ -149,9 +149,9 @@ footer {
     padding-bottom: 0 !important;
 
 }
-
+/workspace/IFA-JMD/assets/images/hero.webp
 .hero-image {
-    background-image: url("./assets/images/hero.webp");
+    background-image: url("../assets/images/hero.webp");
     /* Replace with your hero image path */
     background-size: cover;
     background-position: center;
