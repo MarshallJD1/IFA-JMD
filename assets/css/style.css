@@ -133,20 +133,22 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fix the background image */
-    padding: 10px 0; /* Adjust padding as needed */
+    padding: 50px 0; /* Adjust padding as needed */
     color: var(--secondary-text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between elements */
 }
 
 .home-title {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 4rem;
-    color: var(--secondary-heading);
-    margin-bottom: 20px;
-    background-color: var(--primary-color);
-    padding-top: 10px;
+    color: var(--primary-color);
     
+    margin: 5px;
     
-   
+    padding-top: 20px; /* Add padding to move the title higher up */
 }
 
 .home-text  {
@@ -155,15 +157,11 @@ footer {
     color: var(--secondary-heading);
     text-decoration: solid;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 10px; /* Add margin to move the text lower down */
     border-radius: 5%;
     background-color: var(--primary-color);
-    align-items: baseline;
-    padding: 20px;
-    
-   
-    
-}
+    padding: 20px; /* Add padding for better spacing */
+    }
 
 .quote {
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -171,6 +169,8 @@ footer {
     color: var(--secondary-heading);
     margin-top: 2rem;
     background-color: var(--primary-text);
+    align-self: flex-end; /* Align the quote to the bottom */
+    margin: 20px; /* Add margin to create space at the bottom */
 }
 
 /*Awareness section*/
@@ -224,7 +224,7 @@ footer {
 
 .accordion-button:not(.collapsed) {
     background-color: var(--secondary-color); /* Change this to your desired color */
-    color: var(--primary-color); /* Change this to your desired text color */
+    color: var (--primary-color); /* Change this to your desired text color */
 }
 
 .accordion-button:not(.collapsed)::after {
