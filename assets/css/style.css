@@ -165,12 +165,12 @@ footer {
 
 .quote {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--secondary-heading);
-    margin-top: 2rem;
+    
     background-color: var(--primary-text);
     align-self: flex-end; /* Align the quote to the bottom */
-    margin: 20px; /* Add margin to create space at the bottom */
+    margin: 5px; /* Add margin to create space at the bottom */
 }
 
 /*Awareness section*/
@@ -343,7 +343,7 @@ footer {
 .gallery-title {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 4rem;
-    color: var(--white);
+    color: var (--white);
     margin-bottom: 1rem;
     text-align: center;
     background-color: #A98DE5;
@@ -402,12 +402,17 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .navbar-brand, .help-button, .navbar-toggler {
+        flex: 1;
+        text-align: center;
+    }
+
     .hero-image {
         padding: 50px 0; /* Adjust padding for smaller screens */
     }
 
     .home-title {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     .home-text {
@@ -416,5 +421,33 @@ footer {
 
     .card-img-top {
         height: 150px; /* Adjust image height for smaller screens */
+    }
+    .card {
+        width: 100%; /* Make carousel items full width on smaller screens */
+    }
+    .invisiblebox {
+        max-height: 50px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .home-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .home-text {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .card-img-top {
+        height: 100px; /* Adjust image height for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Make carousel items full width on smaller screens */
+    }
+    .invisiblebox {
+        max-height: 50px;
     }
 }
