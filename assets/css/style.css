@@ -133,7 +133,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fix the background image */
-    padding: 50px 0; /* Adjust padding as needed */
+    padding: 10px 0; /* Adjust padding as needed */
     color: var(--secondary-text);
 }
 
