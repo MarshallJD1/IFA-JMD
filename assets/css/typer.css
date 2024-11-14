@@ -12,19 +12,19 @@ body {
     color: white;
 }
 
-/* Fireworks container - taking up 90% of the screen */
+/* Fireworks container - taking up 100% of the screen */
 .fireworks-container {
     position: relative;
     width: 100%;
-    height: 90vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: hidden; /* Prevent anything from going off-screen */
     background-color: #000;
 }
 
 /* Fireworks effect area */
 #fireworks {
-    position: absolute;
-    bottom: 10vh; /* Start from just above the input field */
+    position: relative;
+    top: 0; /* Start from the top of the screen */
     width: 100%;
     height: 100%;
 }
@@ -32,20 +32,19 @@ body {
 /* Adjusted animation for rising and exploding effect */
 @keyframes rise {
     0% { transform: translateY(0); opacity: 1; }
-    70% { transform: translateY(-60vh); opacity: 1; } /* Rise to about 75% of screen */
-    100% { transform: translateY(-75vh); opacity: 0; } /* End explosion at around 90% */
+    100% { transform: translateY(-70vh); opacity: 1; } /* Stop at about 70% of the screen height */
 }
 
 @keyframes explode {
     0% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; transform: scale(3); }
+    100% { opacity: 0; transform: scale(3); } /* Expand and fade out */
 }
 
 /* Letter styling for fireworks effect */
 .letter {
     position: absolute;
-    font-size: 24px;
+    font-size: 48px;
     color: #FFD700;
-    animation: rise 2s ease-out forwards;
-    bottom: 10vh; /* Start letters from just above the input field */
+    animation: rise 2s ease-out forwards; /* Only the rise animation applies here */
+    animation-delay: 0s; /* Start immediately for the rise */
 }
