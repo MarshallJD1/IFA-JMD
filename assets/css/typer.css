@@ -1,0 +1,51 @@
+/* Basic layout settings */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #282c34;
+    color: white;
+}
+
+/* Fireworks container - taking up 90% of the screen */
+.fireworks-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Fireworks effect area */
+#fireworks {
+    position: absolute;
+    bottom: 10vh; /* Start from just above the input field */
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjusted animation for rising and exploding effect */
+@keyframes rise {
+    0% { transform: translateY(0); opacity: 1; }
+    70% { transform: translateY(-60vh); opacity: 1; } /* Rise to about 75% of screen */
+    100% { transform: translateY(-75vh); opacity: 0; } /* End explosion at around 90% */
+}
+
+@keyframes explode {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(3); }
+}
+
+/* Letter styling for fireworks effect */
+.letter {
+    position: absolute;
+    font-size: 24px;
+    color: #FFD700;
+    animation: rise 2s ease-out forwards;
+    bottom: 10vh; /* Start letters from just above the input field */
+}
